@@ -14,13 +14,23 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(nlohmann_json REQUIRED)
 
-set(COMMON_DEPENDENCIES
-  rclcpp
-)
 
 # Add include directory
 include_directories(include)
+
+# Common dependencies
+set(COMMON_DEPENDENCIES
+  rclcpp
+  std_msgs
+  geometry_msgs
+  nav_msgs
+  nlohmann_json
+)
 
 add_executable(waypoint_recorder src/waypoint_recorder_node.cpp)
 ament_target_dependencies(waypoint_recorder ${COMMON_DEPENDENCIES})
