@@ -4,6 +4,9 @@
 
 A ROS2 utility package to interactively record waypoints based on the robot's odometry and save them to a JSON file.
 
+## [View Demo Video](https://drive.google.com/file/d/1KklIigYbCunJCCx7AhKZNd6-13tMK6ji/view?usp=sharing)
+
+
 ---
 
 ## 📦 Features
