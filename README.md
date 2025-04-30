@@ -27,9 +27,19 @@ colcon build --packages-select waypoint_tools
 source install/setup.bash
 ```
 
+## 📦 Installing Dependencies
+
+```
+cd ~/ros2_ws
+sudo apt-get update -y && rosdep update && rosdep install --from-paths src --ignore-src -y
+```
+
 
 ## 🚀 Run the Node
 
 ```bash
 ros2 run waypoint_tools waypoint_recorder_node 
 ```
+
+## 👨‍💻 Author
+Made with ❤️ by Manoj M
